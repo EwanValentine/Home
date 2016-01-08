@@ -1,1 +1,2 @@
-console.log('test');
+const bt = require('noble');
+bt.startScanning(); // any service UUID, no duplicates

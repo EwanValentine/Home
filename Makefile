@@ -2,5 +2,6 @@ default: all
 
 all: 
 	git pull
-	forever	start api/server.js
-	cd ui && npm run build
+	cd api && forever start server.js
+	cd ..
+	cd ui && npm install && npm run build
